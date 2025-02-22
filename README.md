@@ -60,5 +60,4 @@ Technologies used:
 
 ---
 
-Feel free to explore the individual projects to learn more about Flask, PyTorch, and multimodal data processing!
 ```
