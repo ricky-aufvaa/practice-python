@@ -58,6 +58,5 @@ Technologies used:
    - Run the Flask backend: `python app.py`
    - Run the Streamlit frontend: `streamlit run frontend.py`
 
----
 
 ```
