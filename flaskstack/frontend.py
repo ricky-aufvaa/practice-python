@@ -33,10 +33,10 @@ Author: Sarabjot Singh
 Date: 21-02-2025
 Version: 1.0
 """
+
 import streamlit as st
 import requests
 
-# Title of the app
 st.title("Employee Sign-In App")
 
 # Input fields for name and employee ID
