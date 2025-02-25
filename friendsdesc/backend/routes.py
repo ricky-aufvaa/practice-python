@@ -4,6 +4,9 @@ from app import app,db
 from schema import Friend
 
 #routes
+@app.route('/')
+def hello():
+    return "hello"
 @app.route("/api/friend", methods = ['GET'])
 def view():
     friends = Friend.query.all()
