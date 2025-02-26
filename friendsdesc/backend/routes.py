@@ -3,13 +3,9 @@ from flask import request,jsonify
 from app import app,db
 from schema import Friend
 
-#routes
-@app.route('/')
-def hello():
-    return "hello"
-@app.route("/api/friend", methods = ['GET'])
-def view():
-    friends = Friend.query.all()
+@app.route("/api/friend", methods =["GET"] )
+def show_friends():
+    friends= Friend.query.all()
     results = [friend.to_json() for friend in friends]
     return jsonify(results)
 
@@ -24,5 +20,6 @@ def create_friend():
 
     db.session.add(new_friend)
     db.session.commit()
-    # new_friend = to_json(new_friend)
-    return "friend create successfully. "
+    json_return = Friend.to_json(new_friend)
+    #typical API approach is returning a json
+    return (json_return)
