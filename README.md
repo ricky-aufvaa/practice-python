@@ -57,7 +57,7 @@ Technologies used:
    - Install dependencies: `pip install -r requirements.txt`
    - Run the Flask backend: `python app.py`
    - Run the Streamlit frontend: `streamlit run frontend.py`
--
+--
 
 
 ```
